@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --primary: #2f69e7;
+  --secondary: black;
+  --light: #e8f1ff;
+  --dark: #2f69e7;
+}
+
+.skills ul{
+  margin-left: 15px;;
+}
+
+
+header {
+  position: sticky;
+  top: 0;
+  background: var(--primary);
+  color: white;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 35px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+@media(max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
+
+.project-card ul{
+  margin-left: 15px;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 20px;
+  background: linear-gradient(120deg, var(--primary), var(--secondary));
+  color: white;
+}
+
+.hero img {
+  width: 270px;
+  border-radius: 50%;
+  border: 5px solid var(--light);
+}
+
+.hero-text {
+  max-width: 450px;
+}
+
+.hero button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: var(--dark);
+  color: white;
+  border-radius: 30px;
+  border-color: white;
+  cursor: pointer;
+}
+
+
+section {
+  padding: 30px 30px;
+}
+
+.skills, .education {
+  /* display: flex;
+  justify-content: space-evenly; */
+  gap: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+table, td, th {
+  border: 1px solid #aaa;
+  padding: 12px;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 45px;
+}
+
+.project-card {
+  border-radius: 10px;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.35);
+}
+
+
+.projects-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media(max-width: 1200px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media(max-width: 768px) {
+  .projects-grid { grid-template-columns: repeat(1, 1fr); }
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+form button {
+  padding: 12px 18px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+footer a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+.btn {
+    background: var(--primary);
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+  }
+.btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+  }
